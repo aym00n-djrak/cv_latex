@@ -1,0 +1,126 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+
+% Couleurs modernes
+\definecolor{primary}{RGB}{46, 52, 64}    % Noir bleuté
+\definecolor{accent}{RGB}{76, 86, 106}    % Gris bleuté
+\definecolor{highlight}{RGB}{129, 161, 193} % Bleu clair
+
+% Style des sections
+\titleformat{\section}{\Large\bfseries\color{primary}}{}{0em}{}[{\titlerule[1pt]}]
+\titlespacing*{\section}{0pt}{0.5em}{0.5em}
+
+% Style des listes
+\setlist[itemize]{leftmargin=*, nosep, after=\vspace{0.5em}}
+\setlist[itemize]{label=\color{highlight}\textbullet}
+
+% Police Montserrat
+\usepackage[default]{montserrat}
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+
+% En-tête
+\begin{center}
+    {\Huge\bfseries\color{primary}Rémy Jovanovic}\\[0.2em]
+    {\large\color{accent}Jeune Diplômé en Ingénierie des Systèmes d'Information}\\[0.5em]
+
+    \begin{tabular}{@{}c@{\hspace{1em}}c@{\hspace{1em}}c@{}}
+        \faPhone\ \color{accent}06 52 22 44 39 &
+        \faEnvelope\ \href{mailto:remyj@outlook.fr}{\color{accent}remyj@outlook.fr} &
+        \faGithub\ \href{https://github.com/aym00n-djrak}{\color{accent}aym00n-djrak}
+    \end{tabular}
+\end{center}
+
+% Expérience professionnelle
+\section*{Expérience Professionnelle}
+\begin{itemize}
+    \item \textbf{Stage Ingénieur Développeur Fullstack} \hfill Mars 2024 - Août 2024\\
+          \textcolor{highlight}{Takima} \hfill Paris
+          \begin{itemize}
+              \item Développement fullstack avec Java/Spring et Vite/React
+              \item Architecture microservices et API REST
+              \item Mise en œuvre de méthodologies Agile/Scrumban
+              \item Intégration continue avec Docker et GitLab CI/CD
+          \end{itemize}
+
+    \item \textbf{Stage Ingénieur, Intégration et Validation Système} \hfill Avr. 2023 - Août 2023\\
+          \textcolor{highlight}{CS Group} \hfill Paris
+          \begin{itemize}
+              \item Mise en place d'une plateforme usine pour projet radio, en utilisant la VoIP
+              \item Intégration et validation d'un système radio VoIP
+          \end{itemize}
+
+    \item \textbf{Stage Humanitaire} \hfill Juil. 2022 - Août 2022\\
+          \textcolor{highlight}{Rafamiray Jeunes} \hfill Madagascar
+          \begin{itemize}
+              \item Construction de fondations pour un collège
+              \item Agrandissement d'une maison de gardien et mise en service d'un centre de santé
+          \end{itemize}
+
+    \item \textbf{Job Étudiant} \hfill Jan. 2022 - Août 2023\\
+          \textcolor{highlight}{Fermes de Gally} \hfill Feucherolles
+          \begin{itemize}
+              \item Employé polyvalent attaché au rayon frais
+              \item Entretien du rayon, mise en rayon, contact client, vente de produits et préparation de poulets rôtis
+          \end{itemize}
+\end{itemize}
+
+% Formation
+\section*{Formation}
+\begin{itemize}
+    \item \textbf{Diplôme d'Ingénieur} en Systèmes d'Information \hfill 2021-2024\\
+          École Centrale d'Électronique (ECE Paris)
+
+    \item \textbf{Erasmus} étude de la Blockchain \hfill 2023\\
+          Rotterdam University of Applied Sciences
+
+    \item \textbf{CPGE Scientifique} MPSI-MP \hfill 2019-2021
+\end{itemize}
+
+% Compétences techniques
+\section*{Compétences Techniques}
+\renewcommand{\arraystretch}{1.3} % Augmente l'espacement vertical dans le tableau
+\begin{tabular}{@{}p{5.5cm}p{10cm}@{}}
+    \textbf{Langages de programmation} & Java, Python, C/C\# \vspace{0.4em} \\
+    \textbf{Développement Web} & React, Next.js, Vite, SCSS, CSS, Tailwind, JavaScript/TypeScript \vspace{0.4em} \\
+    \textbf{Back-end et Frameworks} & Spring Boot, Hibernate, JPA \vspace{0.4em} \\
+    \textbf{Base de données} & PostgreSQL, MySQL, MongoDB \vspace{0.4em} \\
+    \textbf{DevOps et Sécurité} & Docker, Kubernetes, Git, GitLab CI/CD, Argo CD, Wireshark, Keycloak \vspace{0.4em} \\
+    \textbf{Systèmes et Virtualisation} & Linux (Gentoo/Debian/Ubuntu), VirtualBox, VMware \vspace{0.4em} \\
+    \textbf{Cloud et Messaging} & S3, Kafka, OVH \vspace{0.4em} \\
+    \textbf{Blockchain} & Architecture décentralisée, Smart Contracts \\
+\end{tabular}
+
+% Projets
+\section*{Projets}
+\begin{itemize}
+    \item \textbf{Prototype de Blockchain} - Implémentation d'une blockchain en Python avec wallet et minage \vspace{0.6em}
+    \item \textbf{Omnes Santé} - Plateforme médicale fullstack (PHP/PostgreSQL) \vspace{0.6em}
+    \item \textbf{Portfolio Next.js} - Application avec blog et gestion de contenu \vspace{0.6em}
+    \item \textbf{Quoridor} - Jeu de plateau en C sur terminal \vspace{0.6em}
+    \item \textbf{Cardiofréquencemètre} - Mesure de la tension avec Arduino et C++ \vspace{0.6em}
+    \item \textbf{Reconnaissance vocale} - Apprentissage et reconnaissance vocale avec Arduino
+\end{itemize}
+
+% Certifications
+\section*{Certifications}
+\renewcommand{\arraystretch}{1.4} % Augmente l'espacement vertical dans le tableau
+\begin{tabular}{@{}p{8cm}p{3cm}@{}}
+    \faCertificate\ Certification Java Master 3 (Takima) & 2024 \vspace{0.4em} \\
+    \faCertificate\ TOEIC niveau B2 & 2023 \vspace{0.4em} \\
+    \faCertificate\ MOOC Gestion de Projet & 2022 \vspace{0.4em} \\
+    \faCertificate\ MOOC Nanotechnologies & 2022
+\end{tabular}
+
+\end{document}
